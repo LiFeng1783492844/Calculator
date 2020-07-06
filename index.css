@@ -1,0 +1,11 @@
+button {
+	font-size: large;
+	color: red;
+}
+
+.txt1{
+	border: solid 5px red;
+}
+#txt2{
+	border: solid 1px blue;
+}
