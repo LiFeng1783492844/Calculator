@@ -1,28 +1,84 @@
-<html>
-<header>
-    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
-    <meta http-equiv="Cache-Control" content="no-cache" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <!-- 指定字符集 -->
-    <meta charset="utf-8" />
+<!DOCTYPE html>
+<html lang="en">
 
-    <link type="text/css" rel="stylesheet" href="./index.css" />
-    <script type="text/javascript" src="./index.js"></script>
-</header>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link type="text/css" rel="stylesheet" href="./index.css" >
+	<script type="text/javascript" src="./index.js"></script>
+</head>
 
 <body>
-    <!-- 主容器 -->
-    <div id="root_container">
-        <div id="text_container">
-            <input type="text" id="txt1" class="txt1"/>
-            <input type="text" id="txt2" class="txt2"/>
-        </div>
-
-        <br />
-        <button onclick="f1()">click me</button>
-    </div>
-
-    
+	<div class="container">
+		<table cellspacing="2">
+			<tr>
+				<td colspan="3">
+					<!-- 显示区域 -->
+					<input id="screen" type="text" disabled value="0"></input>
+				</td>
+				<td>
+					<button class="btn" onclick="inputOperator('/')">/</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button class="btn" onclick="inputNumber(7)">7</button>
+				</td>
+				<td>
+					<button class="btn" onclick="inputNumber(8)">8</button>
+				</td>
+				<td>
+					<button class="btn" onclick="inputNumber(9)">9</button>
+				</td>
+				<td>
+					<button class="btn" onclick="inputOperator('*')">*</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button class="btn" onclick="inputNumber(4)">4</button>
+				</td>
+				<td>
+					<button class="btn" onclick="inputNumber(5)">5</button>
+				</td>
+				<td>
+					<button class="btn" onclick="inputNumber(6)">6</button>
+				</td>
+				<td>
+					<button class="btn" onclick="inputOperator('-')">-</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button class="btn" onclick="inputNumber(1)">1</button>
+				</td>
+				<td>
+					<button class="btn" onclick="inputNumber(2)">2</button>
+				</td>
+				<td>
+					<button class="btn" onclick="inputNumber(3)">3</button>
+				</td>
+				<td>
+					<button class="btn" onclick="inputOperator('+')">+</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button class="btn" onclick="input('.')">.</button>
+				</td>
+				<td>
+					<button class="btn" onclick="inputNumber(0)">0</button>
+				</td>
+				<td>
+					<button class="btn" onclick="clear1()">C</button>
+				</td>
+				<td>
+					<button class="btn" onclick="equal()">=</button>
+				</td>
+			</tr>
+		</table>
+	</div>
 </body>
 
 </html>
