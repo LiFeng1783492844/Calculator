@@ -29,11 +29,6 @@ function inputNumber(nums) {
 	}
 }
 
-// 暂存最后一次的运算符
-function cacheOperator() {
-
-}
-
 function clear1() {
 	screen = document.getElementById("screen")
 	screen.value = "0"
