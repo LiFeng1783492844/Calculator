@@ -51,3 +51,8 @@ function equal() {
 	}
 	screen.value = eval(screen.value)
 }
+
+function inputPoint(){
+	// todo:输入小数点的相关操作，暂时不进行处理
+	inputNumber(".")
+}
