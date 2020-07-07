@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link type="text/css" rel="stylesheet" href="./index.css" >
+	<link type="text/css" rel="stylesheet" href="./index.css">
 	<script type="text/javascript" src="./index.js"></script>
 
 </head>
@@ -14,12 +14,9 @@
 	<div class="container">
 		<table cellspacing="2">
 			<tr>
-				<td colspan="3">
+				<td colspan="4">
 					<!-- 显示区域 -->
 					<input id="screen" type="text" disabled value="0"></input>
-				</td>
-				<td>
-					<button class="btn" onclick="inputNumber('/')">/</button>
 				</td>
 			</tr>
 			<tr>
@@ -33,7 +30,7 @@
 					<button class="btn" onclick="inputNumber(9)">9</button>
 				</td>
 				<td>
-					<button class="btn" onclick="inputNumber('*')">*</button>
+					<button class="btn" onclick="inputOperator('/')">/</button>
 				</td>
 			</tr>
 			<tr>
@@ -47,7 +44,7 @@
 					<button class="btn" onclick="inputNumber(6)">6</button>
 				</td>
 				<td>
-					<button class="btn" onclick="inputNumber('-')">-</button>
+					<button class="btn" onclick="inputOperator('*')">*</button>
 				</td>
 			</tr>
 			<tr>
@@ -61,21 +58,21 @@
 					<button class="btn" onclick="inputNumber(3)">3</button>
 				</td>
 				<td>
-					<button class="btn" onclick="inputNumber('+')">+</button>
+					<button class="btn" onclick="inputOperator('-')">-</button>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<button class="btn" onclick="inputPoint()">.</button>
+					<button class="btn" onclick="clear1()">C</button>
 				</td>
 				<td>
 					<button class="btn" onclick="inputNumber(0)">0</button>
 				</td>
 				<td>
-					<button class="btn" onclick="clear1()">C</button>
+					<button class="btn" onclick="equal()">=</button>
 				</td>
 				<td>
-					<button class="btn" onclick="equal()">=</button>
+					<button class="btn" onclick="inputOperator('+')">+</button>
 				</td>
 			</tr>
 		</table>
