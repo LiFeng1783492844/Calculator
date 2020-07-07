@@ -1,10 +1,33 @@
+table{
+	background-color: #CCCCCC;
+}
+
 #screen{
-	width: 406px;
+	width: 208px;
 	height: 50px;
-	border: solid 1px;
+	border: 0;
+	font-size: large;
+	text-align: right;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+}
+
+button{
+	width: 50px;
+	height: 50px;
+	border: 0;
+	font-size: large;
+	border-radius: 5px;
+}
+
+.btnNum{
+	background-color: #CCFFFF;
+}
+
+.btnOperator{
+	background-color: #FFFFCC;
 }
 
 .btn{
-	width: 100px;
-	height: 50px;
+	background-color: #FFCCCC;
 }
