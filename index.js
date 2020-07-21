@@ -15,12 +15,13 @@ function inputNumber(nums) {
 	equalNum = 0
 	screen = document.getElementById("screen")
 
-	// 清除没有输入时的0
-	if (clearFlag) {
+	// 清除没有输入时的0，以及00的情况
+	if (clearFlag || screen.value == '0') {
 		screen.value = ""
 	}
 	// 改变状态，不再清空内容
-	clearFlag = false
+	clearFlag = false;
+
 	screen.value += nums;
 
 	// 如果是新的一次计算,则初始化firstNum，并开启第一个数的输入
@@ -31,11 +32,21 @@ function inputNumber(nums) {
 
 	if (index == 1) {
 		// 正在输入第一个数字
+
+		// 0003的情况
+		if (firstNum == '0') {
+			firstNum = '';
+		}
 		firstNum += nums;
 		// 输入第一个数的时候清空第二个数
 		// secondNum = "";
 	} else {
 		// 正在输入第二个数字
+
+		// 0003的情况
+		if (secondNum == '0') {
+			secondNum = '';
+		}
 		secondNum += nums;
 	}
 }
@@ -72,7 +83,6 @@ function inputOperator(ope) {
 			// 此时输入运算符，则先进行（5+5）的运算，再继续（10+） 5+5+6
 			firstNum = eval(firstNum + operator + secondNum);
 			document.getElementById('screen').value = firstNum;
-
 		}
 
 		// 重置operator
