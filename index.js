@@ -9,7 +9,7 @@ var screen,
 	// 当前要输入第几个数【0】新的一次计算 【1】输入第一个数（被加数）【2】输入第二个数（加数）
 	index = 0,
 	// 连等次数
-	equalNum = 0
+	equalNum = 0  
 
 function inputNumber(nums) {
 	// 输入数字或运算符时重置连等次数
