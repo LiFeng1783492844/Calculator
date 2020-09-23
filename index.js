@@ -3,7 +3,7 @@ var screen,
 	clearFlag = true,
 	// 记录输入的运算符
 	operator = "+",
-	firstNum = "0",
+	firstNum = "0",  
 	secondNum = "0",
 	// 当前要输入第几个数【0】新的一次计算 【1】输入第一个数（被加数）【2】输入第二个数（加数）
 	index = 0,
