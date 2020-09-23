@@ -1,3 +1,4 @@
+// -----
 var screen,
 	// 用于没有输入时显示0，有显示时清空。如果为false则表明正在输入
 	clearFlag = true,
