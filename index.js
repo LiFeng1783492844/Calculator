@@ -27,7 +27,7 @@ function inputNumber(nums) {
 	// 如果是新的一次计算,则初始化firstNum，并开启第一个数的输入
 	if (index == 0) {
 		index = 1;
-		firstNum = "";
+		firstNum = ""; 
 	}
 
 	if (index == 1) {
